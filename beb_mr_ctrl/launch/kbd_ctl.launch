@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+   <arg name="param_file" default="$(find beb_mr_ctrl)/config/beb_mr_ctrl.yaml" />
+
+  <node pkg="keyboard" type="custom" name="keyboard_node" output="screen" />
+
+  <node name="pos_ctrl_node" pkg="beb_mr_ctrl" type="beb_mr_ctrl_node" output="screen" >
+    <remap from="slam_pose" to="ORB2/pose" />
+    <rosparam command="load" file="$(arg param_file)" />
+  </node>
+
+</launch>

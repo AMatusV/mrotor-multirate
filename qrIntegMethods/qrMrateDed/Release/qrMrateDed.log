@@ -1,0 +1,8 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (qrMrateStu.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  DriverMultiIntrp.cpp
+  Generating code
+  2 of 128 functions ( 1.6%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  qrMrateDed.vcxproj -> D:\AMatusV\OneDrive - Instituto Nacional de Astrofísica Óptica y Electrónica\INAOE\Preparación de Tesis\Source\qrIntegrationMethods\Release\qrMrateDed.exe

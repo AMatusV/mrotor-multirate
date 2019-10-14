@@ -1,0 +1,37 @@
+model_mr_factor: 2.0
+model_delay_s: 0.04
+update_freq: 40.0
+#max_linear_vel: 2.0
+min_alt: 0.4
+max_alt: 2.5
+
+# Determines how much of the predicted feedback signal can happen in 1/fps seconds
+feedback_pred_factor: 0.2
+# Compensate for integerator's over-estimation of the system response
+delay_compensation_factor: 0.7
+
+safety_send_zero: true
+zero_xy_hover: false
+manual_override_sim: true
+simulation_flag: false
+
+pid_forward:
+  p: 0.05
+  i: 0.0
+  d: 0.07
+  i_clamp: 0.02
+pid_lateral:
+  p: 0.05
+  i: 0.0
+  d: 0.07
+  i_clamp: 0.02
+pid_yaw:
+  p: 0.1
+  i: 0.0
+  d: 0.0
+  i_clamp: 0.02
+pid_alt:
+  p: 0.1
+  i: 0.0
+  d: 0.0
+  i_clamp: 0.02
